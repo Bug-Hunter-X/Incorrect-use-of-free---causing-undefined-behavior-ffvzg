@@ -1,0 +1,2 @@
+# Incorrect Use of free() in C
+This repository demonstrates a common error in C programming: attempting to use `free()` on a pointer to memory allocated on the stack.  The `free()` function is designed to deallocate memory allocated dynamically using functions like `malloc()`, `calloc()`, or `realloc()`.  Attempting to use `free()` on a stack-allocated variable leads to undefined behavior, often resulting in crashes or other unpredictable outcomes.  The solution demonstrates the correct way to handle memory allocation and deallocation in such cases.
